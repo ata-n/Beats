@@ -1,0 +1,16 @@
+PODS:
+  - BeamMusicPlayerViewController (0.2.1):
+    - BeamMusicPlayerViewController/MediaPlayer
+    - OBSlider (~> 1.1)
+  - BeamMusicPlayerViewController/MediaPlayer (0.2.1):
+    - OBSlider (~> 1.1)
+  - OBSlider (1.1.0)
+
+DEPENDENCIES:
+  - BeamMusicPlayerViewController
+
+SPEC CHECKSUMS:
+  BeamMusicPlayerViewController: ecfd85eb1619f4c69d093f74822356c6831b432f
+  OBSlider: 1eae1ad6fea0af687f7dde0366003044c4ba3d27
+
+COCOAPODS: 0.19.1

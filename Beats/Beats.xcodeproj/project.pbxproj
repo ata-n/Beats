@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05D87FB658E444B09C352790 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3E43ECB825413D943A9A25 /* libPods.a */; };
+		3D12E50A179DBAB200515EB2 /* libaubio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D12E508179DB8BF00515EB2 /* libaubio.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		3D7FD8AF1795F74600020D9A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D7FD8AE1795F74600020D9A /* UIKit.framework */; };
+		3D7FD8B11795F74600020D9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D7FD8B01795F74600020D9A /* Foundation.framework */; };
+		3D7FD8B31795F74600020D9A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D7FD8B21795F74600020D9A /* CoreGraphics.framework */; };
+		3D7FD8B91795F74600020D9A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D7FD8B71795F74600020D9A /* InfoPlist.strings */; };
+		3D7FD8BB1795F74600020D9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7FD8BA1795F74600020D9A /* main.m */; };
+		3D7FD8BF1795F74700020D9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7FD8BE1795F74700020D9A /* AppDelegate.m */; };
+		3D7FD8C11795F74700020D9A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7FD8C01795F74700020D9A /* Default.png */; };
+		3D7FD8C31795F74700020D9A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7FD8C21795F74700020D9A /* Default@2x.png */; };
+		3D7FD8C51795F74700020D9A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7FD8C41795F74700020D9A /* Default-568h@2x.png */; };
+		3D7FD8CC1795F85600020D9A /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D7FD8CB1795F85600020D9A /* Storyboard.storyboard */; };
+		3D7FD8CF1795F8F900020D9A /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7FD8CE1795F8F900020D9A /* InitialViewController.m */; };
+		3D7FD8D11795FA1600020D9A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D7FD8D01795FA1600020D9A /* QuartzCore.framework */; };
+		3D7FD8D31796090600020D9A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D7FD8D21796090600020D9A /* AVFoundation.framework */; };
+		3D7FD8D51796090D00020D9A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D7FD8D41796090D00020D9A /* AudioToolbox.framework */; };
+		3D7FD9391797ADFD00020D9A /* MixerHostAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7FD9381797ADFD00020D9A /* MixerHostAudio.m */; };
+		3D7FD93C179877F100020D9A /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7FD93B179877F100020D9A /* Deck.m */; };
+		3D7FD941179879DC00020D9A /* TPCircularBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7FD93D179879DC00020D9A /* TPCircularBuffer.c */; };
+		3D7FD942179879DC00020D9A /* TPCircularBuffer+AudioBufferList.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7FD93F179879DC00020D9A /* TPCircularBuffer+AudioBufferList.c */; };
+		3D7FD94417988CAF00020D9A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D7FD94317988CAF00020D9A /* CoreMedia.framework */; };
+		3D84BA4517A1935800AFF3D1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D84BA4417A1935800AFF3D1 /* CoreData.framework */; };
+		3D84BA4817A193E900AFF3D1 /* Beats.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D84BA4617A193E900AFF3D1 /* Beats.xcdatamodeld */; };
+		3D84BA4B17A83CEF00AFF3D1 /* WaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D84BA4A17A83CEF00AFF3D1 /* WaveView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3D84BA4E17A8CE9700AFF3D1 /* GLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D84BA4D17A8CE9700AFF3D1 /* GLView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3D84BA5017A8D3F300AFF3D1 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D84BA4F17A8D3F300AFF3D1 /* OpenGLES.framework */; };
+		3DA08256179898D900557937 /* beatsMono.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3DA08255179898D900557937 /* beatsMono.caf */; };
+		3DA08258179898DF00557937 /* guitarStereo.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3DA08257179898DF00557937 /* guitarStereo.caf */; };
+		3DA0828D179A836100557937 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA0828C179A836100557937 /* Accelerate.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3D12E508179DB8BF00515EB2 /* libaubio.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libaubio.a; path = ../aubio/build/src/libaubio.a; sourceTree = "<group>"; };
+		3D7FD8AB1795F74600020D9A /* Beats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beats.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D7FD8AE1795F74600020D9A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3D7FD8B01795F74600020D9A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3D7FD8B21795F74600020D9A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3D7FD8B61795F74600020D9A /* Beats-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Beats-Info.plist"; sourceTree = "<group>"; };
+		3D7FD8B81795F74600020D9A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3D7FD8BA1795F74600020D9A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3D7FD8BC1795F74600020D9A /* Beats-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Beats-Prefix.pch"; sourceTree = "<group>"; };
+		3D7FD8BD1795F74700020D9A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3D7FD8BE1795F74700020D9A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3D7FD8C01795F74700020D9A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3D7FD8C21795F74700020D9A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3D7FD8C41795F74700020D9A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3D7FD8CB1795F85600020D9A /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		3D7FD8CD1795F8F900020D9A /* InitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialViewController.h; sourceTree = "<group>"; };
+		3D7FD8CE1795F8F900020D9A /* InitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialViewController.m; sourceTree = "<group>"; };
+		3D7FD8D01795FA1600020D9A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3D7FD8D21796090600020D9A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3D7FD8D41796090D00020D9A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3D7FD9371797ADFD00020D9A /* MixerHostAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixerHostAudio.h; sourceTree = "<group>"; };
+		3D7FD9381797ADFD00020D9A /* MixerHostAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixerHostAudio.m; sourceTree = "<group>"; };
+		3D7FD93A179877F100020D9A /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		3D7FD93B179877F100020D9A /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		3D7FD93D179879DC00020D9A /* TPCircularBuffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TPCircularBuffer.c; sourceTree = "<group>"; };
+		3D7FD93E179879DC00020D9A /* TPCircularBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPCircularBuffer.h; sourceTree = "<group>"; };
+		3D7FD93F179879DC00020D9A /* TPCircularBuffer+AudioBufferList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "TPCircularBuffer+AudioBufferList.c"; sourceTree = "<group>"; };
+		3D7FD940179879DC00020D9A /* TPCircularBuffer+AudioBufferList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TPCircularBuffer+AudioBufferList.h"; sourceTree = "<group>"; };
+		3D7FD94317988CAF00020D9A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		3D84BA4417A1935800AFF3D1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3D84BA4717A193E900AFF3D1 /* Beats.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Beats.xcdatamodel; sourceTree = "<group>"; };
+		3D84BA4917A83CEF00AFF3D1 /* WaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveView.h; sourceTree = "<group>"; };
+		3D84BA4A17A83CEF00AFF3D1 /* WaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveView.m; sourceTree = "<group>"; };
+		3D84BA4C17A8CE9700AFF3D1 /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLView.h; sourceTree = "<group>"; };
+		3D84BA4D17A8CE9700AFF3D1 /* GLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLView.m; sourceTree = "<group>"; };
+		3D84BA4F17A8D3F300AFF3D1 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		3DA08255179898D900557937 /* beatsMono.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = beatsMono.caf; sourceTree = "<group>"; };
+		3DA08257179898DF00557937 /* guitarStereo.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = guitarStereo.caf; sourceTree = "<group>"; };
+		3DA0828C179A836100557937 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		79DBFC03965B46C2AB050940 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		CD3E43ECB825413D943A9A25 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D7FD8A81795F74600020D9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D84BA5017A8D3F300AFF3D1 /* OpenGLES.framework in Frameworks */,
+				3D84BA4517A1935800AFF3D1 /* CoreData.framework in Frameworks */,
+				3D12E50A179DBAB200515EB2 /* libaubio.a in Frameworks */,
+				3DA0828D179A836100557937 /* Accelerate.framework in Frameworks */,
+				3D7FD94417988CAF00020D9A /* CoreMedia.framework in Frameworks */,
+				3D7FD8D51796090D00020D9A /* AudioToolbox.framework in Frameworks */,
+				3D7FD8D31796090600020D9A /* AVFoundation.framework in Frameworks */,
+				3D7FD8D11795FA1600020D9A /* QuartzCore.framework in Frameworks */,
+				3D7FD8AF1795F74600020D9A /* UIKit.framework in Frameworks */,
+				3D7FD8B11795F74600020D9A /* Foundation.framework in Frameworks */,
+				3D7FD8B31795F74600020D9A /* CoreGraphics.framework in Frameworks */,
+				05D87FB658E444B09C352790 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D7FD8A21795F74600020D9A = {
+			isa = PBXGroup;
+			children = (
+				3D84BA4617A193E900AFF3D1 /* Beats.xcdatamodeld */,
+				3D7FD8B41795F74600020D9A /* Beats */,
+				3D7FD8AD1795F74600020D9A /* Frameworks */,
+				3D7FD8AC1795F74600020D9A /* Products */,
+				79DBFC03965B46C2AB050940 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		3D7FD8AC1795F74600020D9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D7FD8AB1795F74600020D9A /* Beats.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D7FD8AD1795F74600020D9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D84BA4F17A8D3F300AFF3D1 /* OpenGLES.framework */,
+				3D84BA4417A1935800AFF3D1 /* CoreData.framework */,
+				3DA0828C179A836100557937 /* Accelerate.framework */,
+				3D7FD94317988CAF00020D9A /* CoreMedia.framework */,
+				3D7FD8D41796090D00020D9A /* AudioToolbox.framework */,
+				3D7FD8D21796090600020D9A /* AVFoundation.framework */,
+				3D7FD8D01795FA1600020D9A /* QuartzCore.framework */,
+				3D7FD8AE1795F74600020D9A /* UIKit.framework */,
+				3D7FD8B01795F74600020D9A /* Foundation.framework */,
+				3D7FD8B21795F74600020D9A /* CoreGraphics.framework */,
+				CD3E43ECB825413D943A9A25 /* libPods.a */,
+				3D12E508179DB8BF00515EB2 /* libaubio.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D7FD8B41795F74600020D9A /* Beats */ = {
+			isa = PBXGroup;
+			children = (
+				3DA08257179898DF00557937 /* guitarStereo.caf */,
+				3DA08255179898D900557937 /* beatsMono.caf */,
+				3D7FD9361797ADB200020D9A /* Lib */,
+				3D7FD8CB1795F85600020D9A /* Storyboard.storyboard */,
+				3D7FD8BD1795F74700020D9A /* AppDelegate.h */,
+				3D7FD8BE1795F74700020D9A /* AppDelegate.m */,
+				3D7FD8B51795F74600020D9A /* Supporting Files */,
+				3D7FD8CD1795F8F900020D9A /* InitialViewController.h */,
+				3D7FD8CE1795F8F900020D9A /* InitialViewController.m */,
+			);
+			path = Beats;
+			sourceTree = "<group>";
+		};
+		3D7FD8B51795F74600020D9A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D7FD8B61795F74600020D9A /* Beats-Info.plist */,
+				3D7FD8B71795F74600020D9A /* InfoPlist.strings */,
+				3D7FD8BA1795F74600020D9A /* main.m */,
+				3D7FD8BC1795F74600020D9A /* Beats-Prefix.pch */,
+				3D7FD8C01795F74700020D9A /* Default.png */,
+				3D7FD8C21795F74700020D9A /* Default@2x.png */,
+				3D7FD8C41795F74700020D9A /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D7FD9361797ADB200020D9A /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				3D84BA4C17A8CE9700AFF3D1 /* GLView.h */,
+				3D84BA4D17A8CE9700AFF3D1 /* GLView.m */,
+				3D84BA4917A83CEF00AFF3D1 /* WaveView.h */,
+				3D84BA4A17A83CEF00AFF3D1 /* WaveView.m */,
+				3D7FD93D179879DC00020D9A /* TPCircularBuffer.c */,
+				3D7FD93E179879DC00020D9A /* TPCircularBuffer.h */,
+				3D7FD93F179879DC00020D9A /* TPCircularBuffer+AudioBufferList.c */,
+				3D7FD940179879DC00020D9A /* TPCircularBuffer+AudioBufferList.h */,
+				3D7FD9371797ADFD00020D9A /* MixerHostAudio.h */,
+				3D7FD9381797ADFD00020D9A /* MixerHostAudio.m */,
+				3D7FD93A179877F100020D9A /* Deck.h */,
+				3D7FD93B179877F100020D9A /* Deck.m */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D7FD8AA1795F74600020D9A /* Beats */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D7FD8C81795F74700020D9A /* Build configuration list for PBXNativeTarget "Beats" */;
+			buildPhases = (
+				8D0D76D36ACB425DA6CA5CEE /* Check Pods Manifest.lock */,
+				3D7FD8A71795F74600020D9A /* Sources */,
+				3D7FD8A81795F74600020D9A /* Frameworks */,
+				3D7FD8A91795F74600020D9A /* Resources */,
+				342AB0F39D304B7493D638DC /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Beats;
+			productName = Beats;
+			productReference = 3D7FD8AB1795F74600020D9A /* Beats.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D7FD8A31795F74600020D9A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Crea Inc.";
+			};
+			buildConfigurationList = 3D7FD8A61795F74600020D9A /* Build configuration list for PBXProject "Beats" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3D7FD8A21795F74600020D9A;
+			productRefGroup = 3D7FD8AC1795F74600020D9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D7FD8AA1795F74600020D9A /* Beats */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D7FD8A91795F74600020D9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D7FD8B91795F74600020D9A /* InfoPlist.strings in Resources */,
+				3D7FD8C11795F74700020D9A /* Default.png in Resources */,
+				3D7FD8C31795F74700020D9A /* Default@2x.png in Resources */,
+				3D7FD8C51795F74700020D9A /* Default-568h@2x.png in Resources */,
+				3D7FD8CC1795F85600020D9A /* Storyboard.storyboard in Resources */,
+				3DA08256179898D900557937 /* beatsMono.caf in Resources */,
+				3DA08258179898DF00557937 /* guitarStereo.caf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		342AB0F39D304B7493D638DC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+		8D0D76D36ACB425DA6CA5CEE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D7FD8A71795F74600020D9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D7FD8BB1795F74600020D9A /* main.m in Sources */,
+				3D7FD8BF1795F74700020D9A /* AppDelegate.m in Sources */,
+				3D7FD8CF1795F8F900020D9A /* InitialViewController.m in Sources */,
+				3D7FD9391797ADFD00020D9A /* MixerHostAudio.m in Sources */,
+				3D7FD93C179877F100020D9A /* Deck.m in Sources */,
+				3D7FD941179879DC00020D9A /* TPCircularBuffer.c in Sources */,
+				3D7FD942179879DC00020D9A /* TPCircularBuffer+AudioBufferList.c in Sources */,
+				3D84BA4817A193E900AFF3D1 /* Beats.xcdatamodeld in Sources */,
+				3D84BA4B17A83CEF00AFF3D1 /* WaveView.m in Sources */,
+				3D84BA4E17A8CE9700AFF3D1 /* GLView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3D7FD8B71795F74600020D9A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D7FD8B81795F74600020D9A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D7FD8C61795F74700020D9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3D7FD8C71795F74700020D9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D7FD8C91795F74700020D9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79DBFC03965B46C2AB050940 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Beats/Beats-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"${PODS_HEADERS_SEARCH_PATHS}",
+					"~/aubio-arm-dist/usr/local/include",
+				);
+				INFOPLIST_FILE = "Beats/Beats-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../aubio/build/src\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					MediaPlayer,
+					"-laubio",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3D7FD8CA1795F74700020D9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79DBFC03965B46C2AB050940 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Beats/Beats-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"${PODS_HEADERS_SEARCH_PATHS}",
+					"~/aubio-arm-dist/usr/local/include",
+				);
+				INFOPLIST_FILE = "Beats/Beats-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../aubio/build/src\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					MediaPlayer,
+					"-laubio",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D7FD8A61795F74600020D9A /* Build configuration list for PBXProject "Beats" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D7FD8C61795F74700020D9A /* Debug */,
+				3D7FD8C71795F74700020D9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D7FD8C81795F74700020D9A /* Build configuration list for PBXNativeTarget "Beats" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D7FD8C91795F74700020D9A /* Debug */,
+				3D7FD8CA1795F74700020D9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3D84BA4617A193E900AFF3D1 /* Beats.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3D84BA4717A193E900AFF3D1 /* Beats.xcdatamodel */,
+			);
+			currentVersion = 3D84BA4717A193E900AFF3D1 /* Beats.xcdatamodel */;
+			path = Beats.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3D7FD8A31795F74600020D9A /* Project object */;
+}
